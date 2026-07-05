@@ -16,9 +16,9 @@ The solution was developed in Python by analysing the data set, implementing a m
 The given parametric equations are:
 
 ```text
-x = t*cos(theta) - exp(M*|t|)*sin(0.3*t)*sin(theta) + X
+x = t*cos(theta) - e^(M*|t|)*sin(0.3*t)*sin(theta) + X
 
-y = 42 + t*sin(theta) + exp(M*|t|)*sin(0.3*t)*cos(theta)
+y = 42 + t*sin(theta) + e^(M*|t|)*sin(0.3*t)*cos(theta)
 ```
 
 where
