@@ -118,3 +118,11 @@ The optimized curve closely overlaps the observed dataset, indicating that the e
 ### Final Optimized Curve
 
 ![Final Curve](images/final_curve_step10.png)
+
+## Conclusion
+
+This project successfully estimates the unknown parameters of the given parametric curve using numerical optimization.
+
+The workflow includes data inspection, visualization, mathematical modeling, parameter sensitivity analysis, optimization, and validation.
+
+The optimized curve closely matches the observed data, demonstrating that the estimated parameters accurately reconstruct the original curve.
