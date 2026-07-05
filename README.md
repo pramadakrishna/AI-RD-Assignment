@@ -16,22 +16,20 @@ The solution was developed in Python by analyzing the dataset, implementing the 
 
 The given parametric equations are:
 
-\[
-x=t\cos(\theta)-e^{M|t|}\sin(0.3t)\sin(\theta)+X
-\]
+```text
+x = t*cos(theta) - exp(M*|t|)*sin(0.3*t)*sin(theta) + X
 
-\[
-y=42+t\sin(\theta)+e^{M|t|}\sin(0.3t)\cos(\theta)
-\]
+y = 42 + t*sin(theta) + exp(M*|t|)*sin(0.3*t)*cos(theta)
+```
 
 where
 
-- \(6 \le t \le 60\)
+- 6 ≤ t ≤ 60
 
 The unknown parameters are:
 
-- θ
+- θ (Theta)
 - M
 - X
 
-The goal is to estimate these parameters so that the predicted curve closely matches the given dataset.
+The goal is to estimate these parameters such that the predicted curve closely matches the given dataset.
