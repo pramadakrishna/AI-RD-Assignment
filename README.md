@@ -1,16 +1,15 @@
 # AI R&D Assignment - Parametric Curve Parameter Estimation
 
-## Project Overview
+## Project Outline
 
-The objective of this project is to estimate the unknown parameters of a given parametric curve using a dataset of 1500 coordinate points.
+The goal of this project is to estimate unknown parameters of a parametric curve using a dataset of 1500 co-ordinate points.
 
-The unknown parameters to be estimated are:
-
+The following unidentified parameters need to be estimated:
 - θ (Theta)
 - M
 - X
 
-The solution was developed in Python by analyzing the dataset, implementing the mathematical model, constructing an optimization objective, and estimating the unknown parameters through numerical optimization.
+The solution was developed in Python by analysing the data set, implementing a mathematical model, creating an optimization target, and estimating unknown parameters by numerical optimization.
 
 ## Problem Statement
 
@@ -24,7 +23,7 @@ y = 42 + t*sin(theta) + exp(M*|t|)*sin(0.3*t)*cos(theta)
 
 where
 
-- 6 ≤ t ≤ 60
+6 < t < 60
 
 The unknown parameters are:
 
@@ -32,7 +31,7 @@ The unknown parameters are:
 - M
 - X
 
-The goal is to estimate these parameters such that the predicted curve closely matches the given dataset.
+The aim is to estimate these parameters in such a way that the predicted curve is close to the data set.
 
 ## Dataset
 
@@ -40,19 +39,19 @@ The provided dataset (`xy_data.csv`) contains **1500** coordinate points with tw
 - x
 - y
 
-These points represent samples from the unknown parametric curve.
+These points are samples of the parametric curve that is unknown.
 
-Before optimization, the dataset was inspected for:
+Before optimization, the dataset was checked for:
 - Missing values
 - Duplicate records
 - Data types
 - Summary statistics
 
-The dataset was found to be clean and required no preprocessing.
+There was no need for preprocessing because the dataset was deemed to be clean.
 
 ## Workflow
 
-The following workflow was followed to estimate the unknown parameters:
+The following procedure has been followed for the estimation of unknown parameters:
 
 1. Load the dataset.
 2. Perform data quality checks.
@@ -65,9 +64,9 @@ The following workflow was followed to estimate the unknown parameters:
 9. Optimize the unknown parameters using the L-BFGS-B algorithm.
 10. Validate the optimized model using numerical metrics and visual comparison.
 
-## Technologies Used
+## Libraries
 
-The project was implemented using the following Python libraries:
+The project has been implemented with the following library(s) in Python:
 | Library | Purpose |
 |----------|---------|
 | NumPy | Mathematical computations |
@@ -93,7 +92,7 @@ After optimization, the estimated parameters are:
 | Maximum Error | 0.009295 |
 | RMSE | 0.003785 |
 
-The optimized curve closely overlaps the observed dataset, indicating that the estimated parameters accurately reconstruct the given parametric curve.
+The estimated parameters correctly reconstruct the given parametric curve, as evidenced by the optimized curve's close overlap with the observed dataset.
 
 ## Output Visualizations
 
@@ -120,9 +119,8 @@ The optimized curve closely overlaps the observed dataset, indicating that the e
 ![Final Curve](images/final_curve_step10.png)
 
 ## Conclusion
+This project successfully estimates unknown parameters of a parametric curve by applying numerical optimization to the curve.
 
-This project successfully estimates the unknown parameters of the given parametric curve using numerical optimization.
+The workflow includes data exploration, visualization, mathematical modelling, analysis of parameter sensitivity, optimization and validation.
 
-The workflow includes data inspection, visualization, mathematical modeling, parameter sensitivity analysis, optimization, and validation.
-
-The optimized curve closely matches the observed data, demonstrating that the estimated parameters accurately reconstruct the original curve.
+The optimized curve is very close to the observed data, which shows that the estimated parameters are accurately approximating the original curve.
